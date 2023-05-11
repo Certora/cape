@@ -26,3 +26,7 @@ deployments/localhost/
 
 # TODO: remove this when build-abi script is removed
 /abi/
+
+# Certora
+.certora*
+*/.certora*

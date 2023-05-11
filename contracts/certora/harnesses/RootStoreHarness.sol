@@ -28,5 +28,9 @@ contract RootStoreHarness is RootStore {
     function getWriteHead() public view returns(uint64) {
         return _writeHead;
     }
+
+    function getRootsLength() public view returns (uint256) {
+        return _roots.length;
+    }
         
 }
