@@ -51,3 +51,10 @@ invariant noDuplicates(uint256 i, uint256 j)
             requireInvariant rootExistance(j);
         }
     }
+
+
+// Adding a new root must set `_rootsMap` of that root to true.
+rule addRoot(uint256 newRoot) {
+    addRoot(newRoot);
+    assert containsRoot(newRoot);
+}
